@@ -9,6 +9,8 @@ API REST para cadastro, consulta, atualização e exclusão de usuários, pensad
 | [`docs/API.md`](docs/API.md) | Endpoints, métodos HTTP, códigos de resposta, perfis de acesso, JWT, OAuth 2.0 e análise de segurança |
 | [`docs/evidencias/`](docs/evidencias/) | Capturas de tela, vídeo de demonstração e saída do teste da API |
 
+Repositório: https://github.com/joaosantoz/login
+
 ## Tecnologias
 
 | Camada | Tecnologia |
@@ -23,9 +25,11 @@ API REST para cadastro, consulta, atualização e exclusão de usuários, pensad
 Pré-requisitos: Docker e Docker Compose v2. Nenhuma outra instalação é necessária, pois Java, Node e PostgreSQL rodam dentro dos containers.
 
 ```bash
-unzip gestao-usuarios.zip
-cd gestao-usuarios
+git clone https://github.com/joaosantoz/login.git
+cd login
 ```
+
+Ou, a partir do arquivo entregue: `unzip gestao-usuarios.zip && cd gestao-usuarios`.
 
 As portas 5173, 8080 e 5432 precisam estar livres.
 
