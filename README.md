@@ -81,7 +81,7 @@ Saída esperada: `24 passaram, 0 falharam`. Exemplos de chamadas individuais com
 
 Todas em [`docs/evidencias/`](docs/evidencias/):
 
-- `demonstracao.webm`: vídeo do fluxo completo com os três perfis (abre no Chrome, Firefox ou VLC).
+- `demonstracao.mp4`: vídeo do fluxo completo com os três perfis.
 - `testar-api.txt`: saída do script de teste da API.
 - Capturas de tela:
 
