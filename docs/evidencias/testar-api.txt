@@ -1,0 +1,31 @@
+Autenticação
+  ok    401  login com senha errada
+  ok    401  login com e-mail inexistente
+  ok    401  requisição sem token
+  ok    401  token com assinatura adulterada
+Consulta
+  ok    200  ADMIN lista usuários
+  ok    200  OPERATOR lista usuários
+  ok    403  CLIENT lista usuários
+  ok    200  CLIENT consulta /me
+  ok    200  CLIENT consulta o próprio ID
+  ok    403  CLIENT consulta outro usuário
+  ok    404  ADMIN consulta ID inexistente
+Cadastro
+  ok    403  OPERATOR cria usuário
+  ok    400  ADMIN cria com dados inválidos
+  ok    201  ADMIN cria usuário (id 4)
+  ok    409  ADMIN cria com e-mail repetido
+Atualização
+  ok    200  OPERATOR edita dados de um cliente
+  ok    403  OPERATOR altera perfil de um cliente
+  ok    403  OPERATOR edita um administrador
+  ok    403  CLIENT edita o próprio cadastro
+  ok    200  ADMIN promove para OPERATOR
+Exclusão
+  ok    403  OPERATOR exclui usuário
+  ok    409  ADMIN exclui a própria conta
+  ok    204  ADMIN exclui usuário
+  ok    404  usuário excluído não existe mais
+
+24 passaram, 0 falharam
